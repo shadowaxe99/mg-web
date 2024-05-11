@@ -1,0 +1,27 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<div class="features-section">
+    <h2>Exclusive Features</h2>
+    <div class="feature-list" id="feature-list">
+        <div class="feature-item">
+            <h3>AI Late Night After-Hours</h3>
+            <p>Join the Michael Gruen AI persona for unfiltered late-night rants and stories. Experience the raw energy of Michael's thoughts with AI voice synthesis technology.</p>
+        </div>
+        <div class="feature-item">
+            <h3>AI Capital Pitch Room</h3>
+            <p>Pitch your business ideas to the AI persona of Michael Gruen in a virtual boardroom. Get real-time feedback and see if your idea has what it takes to impress.</p>
+        </div>
+        <div class="feature-item">
+            <h3>AI Metaverse x Augmented Reality Takeover</h3>
+            <p>Witness Michael's AI persona take over virtual spaces and AR environments. Be part of immersive experiences that push the boundaries of reality.</p>
+        </div>
+    </div>
+    <div class="feature-access">
+        <p>Want to unlock all features? Purchase an <strong>NFT Pass</strong> or earn <strong>{{ PLATFORM_CRYPTO_TOKEN_NAME }}</strong> to gain exclusive access to premium experiences.</p>
+        <button class="btn-purchase" onclick="purchaseFeature()">Get Access</button>
+    </div>
+</div>
+{% endblock %}
+```

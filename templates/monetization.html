@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetization Options</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <div class="monetization-container">
+        <h1>Monetization Options</h1>
+        <div class="monetization-options">
+            <div class="monetization-option">
+                <h2>NFT Passes & Crypto</h2>
+                <p>Get exclusive access and perks by owning limited-edition NFTs and crypto assets tied to Michael Gruen's brand.</p>
+                <button onclick="purchaseFeature('NFT Passes & Crypto')">Purchase</button>
+            </div>
+            <div class="monetization-option">
+                <h2>{{ PLATFORM_CRYPTO_TOKEN_NAME }}</h2>
+                <p>Earn or buy our platform token to spend on premium features and experiences.</p>
+                <button onclick="purchaseFeature('{{ PLATFORM_CRYPTO_TOKEN_NAME }}')">Get Tokens</button>
+            </div>
+            <div class="monetization-option">
+                <h2>Elite Paid Experiences</h2>
+                <p>Book a virtual 1-on-1 pitch meeting with Michael's AI or join the elite hustle club for personalized advice and networking.</p>
+                <button onclick="purchaseFeature('Elite Paid Experiences')">Book Now</button>
+            </div>
+            <div class="monetization-option">
+                <h2>Sponsorships</h2>
+                <p>Brands can integrate their products into Michael's AI experiences for creative and influential marketing.</p>
+                <button onclick="purchaseFeature('Sponsorships')">Partner with Us</button>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        function purchaseFeature(featureName) {
+            // Placeholder for feature purchase logic
+            console.log(`Purchasing feature: ${featureName}`);
+            // This will be replaced with actual purchase logic
+        }
+    </script>
+</body>
+</html>
+```
