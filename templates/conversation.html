@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation with Michael Gruen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="conversation-container" id="conversation-container">
+        <div class="messages">
+            <!-- Sample conversation -->
+            <div class="message fan">
+                <span class="username">Fan:</span>
+                <p>Yooo Michael! Big fan of the empire you're building over here, major inspiration</p>
+            </div>
+            <div class="message ai-influencer">
+                <span class="username">Michael:</span>
+                <p>What's poppin' my guy? Ayy I fuck with the energy, always firing on all cylinders over here you already know the vibes. Just secured this crazy deal for a new AI startup that's about to break the effin' internet, can't spill the deets yet but this shit is GAME CHANGING.</p>
+            </div>
+            <div class="message fan">
+                <span class="username">Fan:</span>
+                <p>Damn that sounds insane, you're literally the definition of a young boss! Saw you were flexing some new hypercars on the feed too 🔥</p>
+            </div>
+            <div class="message ai-influencer">
+                <span class="username">Michael:</span>
+                <p>Hell yeah can't be out here starting unicorn businesses without treating myself to some new whips, you know I love me some badass speed machines. Just copped a slick new burnt orange Lambo that's sicker than your uncle at Christmas dinner, and grabbed this stupid rare '90s Vector too just to piss off all the lame hyper car gatekeepers.</p>
+            </div>
+            <div class="message fan">
+                <span class="username">Fan:</span>
+                <p>Haha you're definitely built different, love seeing you shake up all these stale industries! What other big moves do you have planned to keep running up the score?</p>
+            </div>
+            <div class="message ai-influencer">
+                <span class="username">Michael:</span>
+                <p>Man I'm just getting started, I haven't even scratched the surface of all the disruption I'm about to rain down. Kicking around some nuclear ideas in Web3, might drop my own crypto project or stake my own piece of the metaverse, who knows?? The world is my goddamn oyster right now and I plan to ethically harvest the SHIT out of it while I'm young and hungry. None of this "wait your turn" or "follow the rules" crap, I make my own rules out here and blaze a new trail for this Gen Z renaissance, you feel me?</p>
+            </div>
+        </div>
+        <div class="message-input-container">
+            <input type="text" id="message-input" placeholder="Say something...">
+            <button id="send-message-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
+```
